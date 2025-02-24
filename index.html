@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="author" content="Mitsuhiro Kitajima Paris Lodron University of Salzburg"/>
+    <title>Latex Assessment</title>
+    <style>
+        html {
+            color: #1a1a1a;
+            background-color: #fdfdfd;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 36em;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            hyphens: auto;
+            overflow-wrap: break-word;
+            text-rendering: optimizeLegibility;
+            font-kerning: normal;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media print {
+            html {
+                background-color: white;
+            }
+
+            body {
+                background-color: transparent;
+                color: black;
+                font-size: 12pt;
+            }
+
+            p, h2, h3 {
+                orphans: 3;
+                widows: 3;
+            }
+
+            h2, h3, h4 {
+                page-break-after: avoid;
+            }
+        }
+
+        p {
+            margin: 1em 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        svg {
+            height: auto;
+            max-width: 100%;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 1.4em;
+        }
+
+        h5, h6 {
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        h6 {
+            font-weight: normal;
+        }
+
+        ol, ul {
+            padding-left: 1.7em;
+            margin-top: 1em;
+        }
+
+        li > ol, li > ul {
+            margin-top: 0;
+        }
+
+        blockquote {
+            margin: 1em 0 1em 1.7em;
+            padding-left: 1em;
+            border-left: 2px solid #e6e6e6;
+            color: #606060;
+        }
+
+        code {
+            font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+            font-size: 85%;
+            margin: 0;
+            hyphens: manual;
+        }
+
+        pre {
+            margin: 1em 0;
+            overflow: auto;
+        }
+
+        pre code {
+            padding: 0;
+            overflow: visible;
+            overflow-wrap: normal;
+        }
+
+        .sourceCode {
+            background-color: transparent;
+            overflow: visible;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #1a1a1a;
+            height: 1px;
+            margin: 1em 0;
+        }
+
+        table {
+            margin: 1em 0;
+            border-collapse: collapse;
+            width: 100%;
+            overflow-x: auto;
+            display: block;
+            font-variant-numeric: lining-nums tabular-nums;
+        }
+
+        table caption {
+            margin-bottom: 0.75em;
+        }
+
+        tbody {
+            margin-top: 0.5em;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        th {
+            border-top: 1px solid #1a1a1a;
+            padding: 0.25em 0.5em 0.25em 0.5em;
+        }
+
+        td {
+            padding: 0.125em 0.5em 0.25em 0.5em;
+        }
+
+        header {
+            margin-bottom: 4em;
+            text-align: center;
+        }
+
+        #TOC li {
+            list-style: none;
+        }
+
+        #TOC ul {
+            padding-left: 1.3em;
+        }
+
+        #TOC > ul {
+            padding-left: 0;
+        }
+
+        #TOC a:not(:hover) {
+            text-decoration: none;
+        }
+
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        div.columns {
+            display: flex;
+            gap: min(4vw, 1.5em);
+        }
+
+        div.column {
+            flex: auto;
+            overflow-x: auto;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        /* The extra [class] is a hack that increases specificity enough to
+           override a similar rule in reveal.js */
+        ul.task-list[class] {
+            list-style: none;
+        }
+
+        ul.task-list li input[type="checkbox"] {
+            font-size: inherit;
+            width: 0.8em;
+            margin: 0 0.8em 0.2em -1.6em;
+            vertical-align: middle;
+        }
+
+        .display.math {
+            display: block;
+            text-align: center;
+            margin: 0.5rem auto;
+        }
+    </style>
+</head>
+<body>
+<header id="title-block-header">
+    <h1 class="title">Latex Assessment</h1>
+    <p class="author">Mitsuhiro Kitajima<br/>
+        Paris Lodron University of Salzburg</p>
+</header>
+<h1 id="link-for-each-file-and-assessments">Link for Each File and
+    Assessments (PLUS myFiles)</h1>
+<table>
+    <thead>
+    <tbody>
+    <tr>
+        <td> <a href = "https://myfiles.sbg.ac.at/index.php/s/XRigGg8R3RaaogK"> source and pdf file of each
+            exercise </a>
+        </td>
+    </tr>
+    <tr>
+        <td> <a href = "https://myfiles.sbg.ac.at/index.php/s/rqJrXAxkbrPZwTi">pdf file of IEEE
+            style formatted paper, normal paper, and presentation </a>
+        </td>
+    </tr>
+    <tr>
+        <td> <a href = "https://myfiles.sbg.ac.at/index.php/s/gCgkZ37PwNt8qgJ"> tex source file of IEEE
+            style formatted paper, normal paper, and presentation </a>
+        </td>
+    </tr>
+    <tr>
+        <td> <a href = "https://myfiles.sbg.ac.at/index.php/s/JkGwwqczEFo6Eyw">.bib file of paper </a></td>
+    </tr>
+    <tr>
+        <td> <a href = "https://myfiles.sbg.ac.at/index.php/s/NmK454miNEx4XMn"> .ps file of IEEE-style paper</a></td>
+    </tr>
+    </tbody>
+</table>
+<h1 id="quantum-computing-and-the-threat-to-security-technology">Quantum
+    Computing and the Threat to Security Technology</h1>
+<h2 id="what-is-quantum-computing">What is Quantum Computing?</h2>
+<h3 id="overview-of-quantum-computers">Overview of Quantum
+    Computers</h3>
+<p>Quantum computing (or quantum computers) is a new model of
+    computation that utilizes techniques and theories from quantum
+    mechanics. One of the most significant differences is the efficiency of
+    computation. Due to the unique characteristics of quantum computation,
+    certain algorithms or problems that are intractable for classical
+    computers can be solved efficiently with quantum computing.</p>
+<p>There are many potential applications of quantum computing. One
+    example is cryptanalysis, which relies heavily on mathematical theory
+    and the complexity of algorithms. Another application is in machine
+    learning, where training and optimizing large datasets require massive
+    amounts of computation.</p>
+<h3
+        id="difference-between-classical-computers-and-quantum-computers">Difference
+    Between Classical Computers and Quantum Computers</h3>
+<p>One of the most significant differences between classical and quantum
+    computers is the concept of the qubit. While classical computers use
+    binary bits (0 or 1), qubits can exist in superposition of states. A
+    qubit is the fundamental unit of quantum information and can be
+    represented as: <span
+            class="math display"><em>a</em>|0⟩ + <em>b</em>|1⟩</span> where a and
+    b are the probability amplitudes of
+    the qubit being in the 0 or 1 state, respectively. These amplitudes must
+    satisfy: <span
+            class="math display">|<em>a</em>|<sup>2</sup> + |<em>b</em>|<sup>2</sup> = 1.</span></p>
+<p>Another key characteristic of quantum computers is the use of quantum
+    circuits. Quantum circuits manipulate qubits through quantum logic
+    gates, which are analogs of classical logic gates. Unlike classical
+    logic gates, which use Boolean algebra, quantum logic gates operate
+    using linear algebra due to the superposition and entanglement of qubit
+    states.</p>
+<p>The input to a quantum circuit is generally a set of qubits
+    initialized to the 0 state. Quantum gates, such as the Hadamard gate
+    (H), can put qubits into superposition, and measurement collapses the
+    qubit state to either 0 or 1.</p>
+<h3 id="quantum-algorithms">Quantum Algorithms</h3>
+<p>Quantum algorithms are a new type of algorithm based on the
+    principles of quantum computation. Due to the unique computational
+    abilities of quantum computers, some quantum algorithms have polynomial
+    time complexity, allowing them to solve problems that classical
+    computers cannot solve efficiently.</p>
+<p>One example is Shor’s algorithm, developed by Peter Shor in 1994.
+    Shor’s algorithm is a quantum algorithm for integer factorization. It
+    can factorize large numbers efficiently using quantum computation,
+    posing a significant threat to cryptographic systems like RSA, which
+    rely on the difficulty of factoring large composite numbers for
+    security.</p>
+<p>Another example is Grover’s algorithm, developed by Lov Grover in
+    1996. Grover’s algorithm is a quantum search algorithm that can search
+    unsorted databases faster than classical algorithms. While classical
+    algorithms require linear time complexity for searching unsorted data,
+    Grover’s algorithm achieves a time complexity of <span
+            class="math inline">O(&radic; n)</span>, which is
+    quadratically faster.</p>
+<p>This algorithm can accelerate cyberattacks based on exhaustive search
+    methods. For example, a brute-force attack on AES-128 encryption would
+    require <span class="math inline">2<sup>126</sup></span> operations
+    classically, but only <span class="math inline">2<sup>63</sup></span>
+    operations using Grover’s algorithm.</p>
+<h2 id="threats-to-security-technology">Threats to Security
+    Technology</h2>
+<h3 id="overview-of-cryptography">Overview of Cryptography</h3>
+<p>Cryptography is the practice of securing information or establishing
+    secure communications through encryption. Its origin date back to
+    ancient Egypt, around 3000 years ago. Today cryptography is widely used
+    in many technologies and systems, such as passwords, electronic
+    signatures, and authentication.</p>
+<h3 id="symmetric-and-asymmetric-encryption">Symmetric and Asymmetric
+    Encryption</h3>
+<p>There are many types of encryption technics, but generally, they can
+    be categorized into two groups: symmetric and asymmetric
+    Encryption.</p>
+<p>Symmetric encryption uses shared key for both encryption and
+    decryption. The security relies on the secrecy of the key and the
+    strength of the encryption algolithm.</p>
+<p>Asymmetric encryption, such as RSA-cryptosystem, uses different keys
+    for encryption and decryption. The key for encryption is public, and the
+    receiver uses a private key to decrypt the text.</p>
+<h3 id="threats-from-quantum-computing">Threats from Quantum
+    Computing</h3>
+<p>Quantum computer and its technology pose a significant threat to
+    current cryptographic systems.</p>
+<p>One of the examples is an RSA encryption algorithm. Nowadays, an RSA
+    encryption system is considered as a secure encryption system, because
+    decryption of the encrypted text without a secret key takes exponential
+    time.<br/>
+    But quantum algorithms for factoring such as Shor’s algorithm can brake
+    RSA encryption, because it can factorize large natural
+    numbers efficiently.</p>
+<h3 id="mitigation-measures">Mitigation Measures</h3>
+<p>Today the study of the cryptography in quantum computer era is
+    ongoing.</p>
+<p>Post-quantum cryptography involves developing new cryptographic
+    algorithms that are resistant to attacks by quantum computers. Examples
+    include lattice-based cryptography, multivariate cryptography,
+    hash-based cryptography, code-based cryptography, and isogeny-based
+    cryptography.</p>
+<p>Cryptography with the theory of quantum computing is also a great
+    interest of current cryptography. Quantum cryptography uses the
+    principles of quantum mechanics to secure communication. For example,
+    quantum key distribution (QKD) allows two parties to generate a shared
+    secret key with security guaranteed by the laws of quantum physics.
+    Another example is Quantum random number generation, which provides
+    truly random numbers, unlike pseudo random numbers from classical
+    computation theory.</p>
+</body>
+</html>
