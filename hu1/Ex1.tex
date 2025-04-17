@@ -1,0 +1,29 @@
+%! Author = kitajimamitsuhiro
+%! Date = 2024/09/29
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\graphicspath{ {.src} }
+
+% Document
+\title{LaTeX Exercise 1}
+\author{Mitsuhiro Kitajima}
+
+\begin{document}
+    \maketitle
+    \begin{table}[htbp]
+        \centering
+        \label{tab:cat_images}
+        \begin{tabular}{|c|c|}
+            \hline
+            \includegraphics[scale=0.1, angle=90]{cat02_moyou_white}  & \includegraphics[scale=0.2, angle=45]{cat02_moyou_white} \\
+            \hline
+            \includegraphics[scale=0.2, angle=270]{cat02_moyou_white} & \includegraphics[scale=0.1]{cat02_moyou_white}          \\
+            \hline
+        \end{tabular}
+    \end{table}
+\end{document}

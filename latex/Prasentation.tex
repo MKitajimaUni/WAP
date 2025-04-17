@@ -1,0 +1,178 @@
+%! Author = kitajimamitsuhiro
+%! Date = 10.02.25
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title{Quantum Computing und Bedrohung der Sicherheitstechnik}
+\author{Mitsuhiro Kitajima, Martin Schider}
+\institute{Paris Lodron University of Salzburg}
+\date{}
+
+\begin{document}
+
+    \begin{frame}
+        \titlepage
+    \end{frame}
+
+
+    \section{Was ist Quantencomputer/computing?}
+
+    \begin{frame}
+        \frametitle{Überblick}
+        \tableofcontents
+    \end{frame}
+
+    \begin{frame}{Was ist Quantencomputer/computing?}
+        \begin{itemize}
+            \item Neue Rechnermodelle mit Quantenmechanik.
+            \item Kann einige Probleme effizient lösen (z.B. Suchalgorithmus, Faktorisierung).
+            \item Mögliche Anwendungen:
+            \begin{itemize}
+                \item Kryptoanalyse
+                \item Maschinelles Lernen
+                \item Optimierungsprobleme (wie das Rucksackproblem)
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Qubit}
+        \begin{itemize}
+            \item Qubit ist das „Bit“ in Quantencomputern.
+            \item Jedes Qubit hat drei Zustände, basierend auf dem Superpositionsprinzip.
+            \item Darstellung: \( a | 0 \rangle + b | 1 \rangle \), wobei \( a \) und \( b \) Wahrscheinlichkeiten der Zustände sind und \( |a|^2 + |b|^2 = 1 \).
+            \item Die Interpretation \("\)gleichzeitig zwei Zustände\("\) ist nicht ganz korrekt.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Quantenschaltungen}
+        \begin{itemize}
+            \item Schaltungen kopieren das Ergebnis in „klassische“ Bits.
+            \item Klassischer Computer: Boolesche Algebra.
+            \item Quantencomputer: Lineare Algebra.
+            \item \textbf{Beispiele von Quantenschaltungen}
+            \begin{itemize}
+                \item Eingabe der Schaltung ist (allgemein) 0.
+                \item Schaltung X: Äquivalent zur NOT-Schaltung.
+                \item Schaltung H: Ändert Qubit in Superposition.
+                \item Messung: Qubit messen und 0 oder 1 ausgeben.
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Quantenalgorithmen}
+        \begin{itemize}
+            \item \textbf{Shor-Algorithmus} (Shor, 1994):
+            \begin{itemize}
+                \item Effiziente Quantenalgorithmen für Faktorisierungsverfahren.
+                \item Relevant für das RSA-Kryptosystem, da dessen Sicherheit auf der Annahme beruht, dass kein Faktorisierungsverfahren mit polynomieller Laufzeit existiert.
+            \end{itemize}
+            \item \textbf{Grover-Algorithmus} (Grover, 1996):
+            \begin{itemize}
+                \item Suchalgorithmus für unsortierte Daten.
+                \item Zeitkomplexität: \( O(\sqrt{n}) \), Raumkomplexität: \( O(\log(n)) \).
+                \item Macht Exhaustionsmethode effizienter.
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+
+    \section{Bedrohungen von Sicherheitstechnik}
+
+    \begin{frame}
+        \frametitle{Überblick}
+        \tableofcontents
+    \end{frame}
+
+    \begin{frame}{Übersicht der Kryptologie}
+        \begin{itemize}
+            \item \textbf{Kryptologie} umfasst:
+            \begin{itemize}
+                \item Kryptographie (Verschlüsselung von Informationen).
+                \item Kryptanalyse (Analyse und Entschlüsselung).
+            \end{itemize}
+            \item \textbf{Kryptographie}:
+            \begin{itemize}
+                \item = krypto (geheim) + graphie (schreiben).
+                \item Wird seit ca. 3000 Jahren eingesetzt (z.B. im alten Ägypten).
+                \item Anwendungen: Passwörter, Kryptowährungen, elektronische Signaturen, Authentifizierung.
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Symmetrische Verschlüsselung}
+        \begin{itemize}
+            \item  Sender und Empfänger teilen sich einen gemeinsamen öffentlichen Schlüssel.
+            \item Angreifer versucht, den Schlüssel zu erraten.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Asymmetrische Verschlüsselung}
+        \begin{itemize}
+            \item Sender benutzt öffentliche Schlüssel für Encryption.
+            \item Empfänger entschlüsselt den Text mit private Schlüssel.
+            \item Beispiel: RSA Encryption
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{RSA-Kryptosystem}
+        \begin{itemize}
+            \item Entwickler: Ronald L. Rivest, Adi Shamir, Leonard Adleman.
+            \item Asymmetrische Verschlüsselung.
+            \item Beruht auf Primfaktorenzerlegung.
+            \item Noch kein Algorithmus bekannt, der die Verschlüsselung effizient lösen kann.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Bedrohung durch Quantencomputer}
+        \begin{itemize}
+            \item Bereits heute möglich, verschlüsselten Datenverkehr abzufangen und zu speichern.
+            \item Mit zukünftigen Quantencomputern möglicherweise entschlüsselbar.
+            \item \textbf{Grover-Algorithmus} für symmetrische Verschlüsselung.
+            \item \textbf{Shor-Algorithmus} für asymmetrische Verschlüsselung.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Post-Quanten-Kryptographie}
+        \begin{itemize}
+            \item Entwicklung neuer Algorithmen, die auch für Quantencomputer schwer zu lösen sind.
+            \item Auf klassischer Computerhardware anwendbar.
+            \item Verfahren:
+            \begin{itemize}
+                \item Gitterbasierte Kryptographie.
+                \item Multivariate Kryptographie.
+                \item Hashbasierte Kryptographie.
+                \item Codebasierte Kryptographie.
+                \item Isogeniebasierte Kryptographie.
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Quantenkryptographie}
+        \begin{itemize}
+            \item Kryptographieverfahren, die auf quantenmechanischen Effekten beruhen.
+            \item Verteilung von Quantenschlüsseln.
+            \item Erzeugung von Quanten-Zufallszahlen.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Quellen}
+        \begin{itemize}
+            \item \url{https://kryptografie.de/kryptografie/index.htm}
+            \item \url{https://www.ibm.com/de-de/topics/cryptography}
+            \item \url{https://studyflix.de/informatik/rsa-verschlusselung-1608}
+            \item \url{https://www.computerweekly.com/de/feature/Die-Auswirkungen-von-Quantum-Computing-auf-Kryptografie}
+            \item \url{https://www.sectigo.com/de/ressourcen/was-ist-gitterbasierte-kryptografie}
+            \item \url{https://www.psw-group.de/blog/quantencomputing-wie-sicher-ist-die-quantenverschluesselung}
+            \item \url{https://pqkdemo.de/multivariate-Kryptografie}
+            \item \url{https://de.wikipedia.org/wiki/RSA-Kryptosystem}
+            \item \url{https://nms.kcl.ac.uk/stefan.edelkamp/lectures/itsec/slides/rsa.pdf}
+            \item \url{https://www.all-electronics.de/elektronik-entwicklung/das-sind-die-chancen-und-risiken-von-quantencomputern-230.html}
+            \item \url{https://www.security-insider.de/was-ist-post-quanten-kryptographie-a-9e2081bf243dc9eda87cb69b93bb9b73/}
+            \item \url{https://www.onlinesicherheit.gv.at/Services/News/RSA-Verschluesselung-Sicherheit.html}
+        \end{itemize}
+    \end{frame}
+
+\end{document}
